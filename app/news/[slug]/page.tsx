@@ -4,7 +4,7 @@ import {notFound} from "next/navigation";
 import Link from "next/link";
 
 const NewsDetailPage = ({params}) => {
-  const newsSlug = params.id;
+  const newsSlug = params.slug;
   const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === newsSlug);
 
   if (!newsItem) {
